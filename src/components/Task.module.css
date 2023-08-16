@@ -1,0 +1,25 @@
+.task {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  background: var(--gray-500);
+  color: var(--gray-100);
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--gray-400);
+  margin-bottom: 0.75rem;
+}
+
+.task button {
+  background: transparent;
+  color: var(--gray-300);
+  border: 0;
+  cursor: pointer;
+
+  transition: color 0.1s;
+}
+
+.task button:hover {
+  color: var(--danger);
+}

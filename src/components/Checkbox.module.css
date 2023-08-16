@@ -1,0 +1,42 @@
+.checkbox {
+  display: flex;
+  align-items: flex-start;
+
+  transition: text-decoration 0.1s;
+}
+
+.checkmark {
+  margin-right: 0.75rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid var(--blue);
+  border-radius: 50%;
+
+  transition: border-color 0.1s;
+}
+
+.checkmark:hover {
+  border-color: var(--blue-dark);
+}
+
+.checked {
+  color: var(--gray-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-color: var(--purple-dark);
+  background-color: var(--purple-dark);
+
+  transition: border-color 0.1s, background-color 0.1s;
+}
+
+.checked:hover {
+  border-color: var(--purple);
+  background-color: var(--purple);
+}
+
+.checkedTask {
+  color: var(--gray-300);
+  text-decoration: line-through;
+}

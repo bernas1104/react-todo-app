@@ -1,0 +1,45 @@
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: -1.75rem;
+  max-width: 736px;
+}
+
+.input input[type="text"], .input button {
+  height: 3.5rem;
+  border: 0;
+  border-radius: 8px;
+  padding: 1rem;
+  color: var(--gray-200);
+}
+
+.input input[type="text"] {
+  flex: 1;
+  margin-right: 0.5rem;
+  background: var(--gray-500);
+}
+
+.input button[type="submit"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--blue-dark);
+  cursor: pointer;
+
+  transition: background-color 0.1s;
+}
+
+.input button[type="submit"]:not(:disabled):hover {
+  background: var(--blue);
+}
+
+.input button[type="submit"]:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.input button[type="submit"] svg {
+  margin-left: 0.5rem;
+}
